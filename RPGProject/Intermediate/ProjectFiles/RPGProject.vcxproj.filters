@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\RPGProject.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\RPGProject.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\RPGProjectEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\RPGProject">
+      <UniqueIdentifier>{BBC1DF5B-14F7-35B0-81CC-82E8172DEB72}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\RPGProject\RPGProject.Build.cs">
+      <Filter>Source\RPGProject</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\RPGProject\RPGProject.cpp">
+      <Filter>Source\RPGProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RPGProject\RPGProject.h">
+      <Filter>Source\RPGProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\RPGProject\RPGProjectGameModeBase.cpp">
+      <Filter>Source\RPGProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RPGProject\RPGProjectGameModeBase.h">
+      <Filter>Source\RPGProject</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\RPGProject\GameInfo.cpp">
+      <Filter>Source\RPGProject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\RPGProject\RPGProjectGameInstance.cpp">
+      <Filter>Source\RPGProject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\RPGProject\SpawnPoint.cpp">
+      <Filter>Source\RPGProject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\RPGProject\Trigger\Portal.cpp">
+      <Filter>Source\RPGProject\Trigger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\RPGProject\Trigger\Trigger.cpp">
+      <Filter>Source\RPGProject\Trigger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\RPGProject\Player\PlayerAnimInstance.cpp">
+      <Filter>Source\RPGProject\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\RPGProject\Player\PlayerCharacter.cpp">
+      <Filter>Source\RPGProject\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\RPGProject\Player\Yin\YinAnimInstance.cpp">
+      <Filter>Source\RPGProject\Player\Yin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\RPGProject\Player\Yin\YinCharacter.cpp">
+      <Filter>Source\RPGProject\Player\Yin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\RPGProject\Player\Kwang\KwangCharacter.cpp">
+      <Filter>Source\RPGProject\Player\Kwang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\RPGProject\Player\Kwang\KwangAnimInstance.cpp">
+      <Filter>Source\RPGProject\Player\Kwang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\RPGProject\Player\Gideon\GideonCharacter.cpp">
+      <Filter>Source\RPGProject\Player\Gideon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\RPGProject\Player\Gideon\GideonAnimInstance.cpp">
+      <Filter>Source\RPGProject\Player\Gideon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\RPGProject\AI\AICharacter.cpp">
+      <Filter>Source\RPGProject\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\RPGProject\AI\AIMinionCharacter.cpp">
+      <Filter>Source\RPGProject\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\RPGProject\AI\AIMinionPawn.cpp">
+      <Filter>Source\RPGProject\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\RPGProject\AI\AIPawn.cpp">
+      <Filter>Source\RPGProject\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\RPGProject\AI\AIState.cpp">
+      <Filter>Source\RPGProject\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\RPGProject\AI\DefaultAIAnimInstance.cpp">
+      <Filter>Source\RPGProject\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\RPGProject\AI\DefaultAIController.cpp">
+      <Filter>Source\RPGProject\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\RPGProject\AI\MinionAIAnimInstance.cpp">
+      <Filter>Source\RPGProject\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\RPGProject\AI\AIModule\BTDecorator_CheckTargetDistance.cpp">
+      <Filter>Source\RPGProject\AI\AIModule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\RPGProject\AI\AIModule\BTService_TargetDetect.cpp">
+      <Filter>Source\RPGProject\AI\AIModule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\RPGProject\AI\AIModule\BTTask_Attack.cpp">
+      <Filter>Source\RPGProject\AI\AIModule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\RPGProject\AI\AIModule\BTTask_NextPatrolPosition.cpp">
+      <Filter>Source\RPGProject\AI\AIModule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\RPGProject\AI\AIModule\BTTask_MoveInteraction.cpp">
+      <Filter>Source\RPGProject\AI\AIModule</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\RPGProject\GameInfo.h">
+      <Filter>Source\RPGProject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\RPGProject\RPGProjectGameInstance.h">
+      <Filter>Source\RPGProject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\RPGProject\SpawnPoint.h">
+      <Filter>Source\RPGProject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\RPGProject\Trigger\Portal.h">
+      <Filter>Source\RPGProject\Trigger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\RPGProject\Trigger\Trigger.h">
+      <Filter>Source\RPGProject\Trigger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\RPGProject\Player\PlayerAnimInstance.h">
+      <Filter>Source\RPGProject\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\RPGProject\Player\PlayerCharacter.h">
+      <Filter>Source\RPGProject\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\RPGProject\Player\Yin\YinAnimInstance.h">
+      <Filter>Source\RPGProject\Player\Yin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\RPGProject\Player\Yin\YinCharacter.h">
+      <Filter>Source\RPGProject\Player\Yin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\RPGProject\Player\Kwang\KwangAnimInstance.h">
+      <Filter>Source\RPGProject\Player\Kwang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\RPGProject\Player\Kwang\KwangCharacter.h">
+      <Filter>Source\RPGProject\Player\Kwang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\RPGProject\Player\Gideon\GideonAnimInstance.h">
+      <Filter>Source\RPGProject\Player\Gideon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\RPGProject\Player\Gideon\GideonCharacter.h">
+      <Filter>Source\RPGProject\Player\Gideon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\RPGProject\AI\AICharacter.h">
+      <Filter>Source\RPGProject\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\RPGProject\AI\AIMinionCharacter.h">
+      <Filter>Source\RPGProject\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\RPGProject\AI\AIMinionPawn.h">
+      <Filter>Source\RPGProject\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\RPGProject\AI\AIPawn.h">
+      <Filter>Source\RPGProject\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\RPGProject\AI\AIState.h">
+      <Filter>Source\RPGProject\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\RPGProject\AI\DefaultAIAnimInstance.h">
+      <Filter>Source\RPGProject\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\RPGProject\AI\DefaultAIController.h">
+      <Filter>Source\RPGProject\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\RPGProject\AI\MinionAIAnimInstance.h">
+      <Filter>Source\RPGProject\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\RPGProject\AI\AIModule\BTDecorator_CheckTargetDistance.h">
+      <Filter>Source\RPGProject\AI\AIModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\RPGProject\AI\AIModule\BTService_TargetDetect.h">
+      <Filter>Source\RPGProject\AI\AIModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\RPGProject\AI\AIModule\BTTask_Attack.h">
+      <Filter>Source\RPGProject\AI\AIModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\RPGProject\AI\AIModule\BTTask_NextPatrolPosition.h">
+      <Filter>Source\RPGProject\AI\AIModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\RPGProject\AI\AIModule\BTTask_MoveInteraction.h">
+      <Filter>Source\RPGProject\AI\AIModule</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source\RPGProject\AI">
+      <UniqueIdentifier>{0654ecc6-f397-48c8-85b7-b3a635fcc13a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\RPGProject\Player">
+      <UniqueIdentifier>{ac3cc9ea-6217-4c45-bd2b-44348ca2a780}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\RPGProject\Trigger">
+      <UniqueIdentifier>{4d9b0c2f-4b34-46d3-bbe5-065fb4762941}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\RPGProject\Player\Gideon">
+      <UniqueIdentifier>{867480ac-24d3-4779-968f-590f523b90b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\RPGProject\Player\Kwang">
+      <UniqueIdentifier>{d197afb5-3676-43da-a8bd-dfe5d7fbf231}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\RPGProject\Player\Yin">
+      <UniqueIdentifier>{b00de526-44c4-495e-9cad-5e5169932c4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\RPGProject\AI\AIModule">
+      <UniqueIdentifier>{9c996b04-1a7b-4433-90e6-56863c9b773c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

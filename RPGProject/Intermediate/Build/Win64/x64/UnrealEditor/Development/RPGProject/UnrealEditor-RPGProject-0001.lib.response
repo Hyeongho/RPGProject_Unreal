@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-RPGProject-0001.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Unreal\RPGProject\RPGProject\Intermediate\Build\Win64\x64\RPGProjectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"C:\Unreal\RPGProject\RPGProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGProject\Module.RPGProject.cpp.obj"
+"C:\Unreal\RPGProject\RPGProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGProject\Default.rc2.res"
+/OUT:"C:\Unreal\RPGProject\RPGProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGProject\UnrealEditor-RPGProject-0001.lib"
