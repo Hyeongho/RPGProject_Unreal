@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\unreal\\rpgproject\\rpgproject\\intermediate\\build\\win64\\unrealeditor\\inc\\rpgproject\\uht\\rpgprojectgameinstance.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\unreal\\rpgproject\\rpgproject\\intermediate\\build\\win64\\x64\\rpgprojecteditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "c:\\unreal\\rpgproject\\rpgproject\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\rpgproject\\definitions.rpgproject.h",
+            "c:\\unreal\\rpgproject\\rpgproject\\source\\rpgproject\\rpgprojectgameinstance.h",
+            "c:\\unreal\\rpgproject\\rpgproject\\intermediate\\build\\win64\\unrealeditor\\inc\\rpgproject\\uht\\rpgprojectgameinstance.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

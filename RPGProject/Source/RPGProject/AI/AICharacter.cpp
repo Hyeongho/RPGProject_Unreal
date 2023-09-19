@@ -96,6 +96,15 @@ float AAICharacter::TakeDamage(float DamageAmount, FDamageEvent const& DamageEve
 {
 	float Damage = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
 
+	LOG(TEXT("HP : %d"), m_AIState->GetHP());
+
+	if (Damage > 0.f)
+	{
+		m_AIState->SetDamage(Damage);
+	}
+
+	LOG(TEXT("HP : %d"), m_AIState->GetHP());
+
 	return Damage;
 }
 

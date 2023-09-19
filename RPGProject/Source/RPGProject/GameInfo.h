@@ -6,6 +6,7 @@
 #include "EngineGlobals.h"
 #include "Engine.h"
 #include "DrawDebugHelpers.h"
+#include "Engine/DamageEvents.h"
 #include "Blueprint/AIBlueprintHelperLibrary.h"
 #include "BehaviorTree/BehaviorTree.h"
 #include "BehaviorTree/BlackboardData.h"

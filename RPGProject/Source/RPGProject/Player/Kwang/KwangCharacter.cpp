@@ -74,10 +74,10 @@ void AKwangCharacter::Attack()
 		FActorSpawnParameters ActorParam;
 		ActorParam.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
 
-		/*FHitResult LineResult;
+		FHitResult LineResult;
 
 		FDamageEvent DmgEvent;
-		result.GetActor()->TakeDamage(10.f, DmgEvent, GetController(), this);*/
+		result.GetActor()->TakeDamage(10.f, DmgEvent, GetController(), this);
 	}
 
 	else

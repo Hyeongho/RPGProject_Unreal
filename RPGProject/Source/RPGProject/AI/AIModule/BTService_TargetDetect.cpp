@@ -4,8 +4,9 @@
 #include "BTService_TargetDetect.h"
 #include "../DefaultAIController.h"
 #include "../AIPawn.h"
-#include "../AIState.h"
 #include "../AICharacter.h"
+#include "../AIState.h"
+
 
 UBTService_TargetDetect::UBTService_TargetDetect()
 {
@@ -18,12 +19,10 @@ void UBTService_TargetDetect::TickNode(UBehaviorTreeComponent& OwnerComp, uint8*
 {
 	Super::TickNode(OwnerComp, NodeMemory, DeltaSeconds);
 
-	// BehaviorTreeComponent를 이용하여 AIController를 얻어올 수 있다.
 	AAIController* Controller = OwnerComp.GetAIOwner();
 
 	if (AAIPawn* AIPawn = Cast<AAIPawn>(Controller->GetPawn()))
 	{
-		// AIPawn이 아닐 경우 정지.
 		if (!IsValid(AIPawn))
 		{
 			return;
@@ -33,15 +32,15 @@ void UBTService_TargetDetect::TickNode(UBehaviorTreeComponent& OwnerComp, uint8*
 
 		AILoc.Z -= AIPawn->GetHalfHeight();
 
-		FHitResult	result;
+		FHitResult result;
 
-		FCollisionQueryParams	param(NAME_None, false, AIPawn);
+		FCollisionQueryParams param(NAME_None, false, AIPawn);
 
 		bool Collision = GetWorld()->SweepSingleByChannel(result, AILoc, AILoc, FQuat::Identity, ECollisionChannel::ECC_GameTraceChannel5, FCollisionShape::MakeSphere(AIPawn->GetAIState()->GetInteractionDistance()), param);
 
 #if ENABLE_DRAW_DEBUG
 
-		FColor	DrawColor = Collision ? FColor::Red : FColor::Green;
+		FColor DrawColor = Collision ? FColor::Red : FColor::Green;
 
 		DrawDebugSphere(GetWorld(), AILoc, AIPawn->GetAIState()->GetInteractionDistance(), 20, DrawColor, false, 0.35f);
 
@@ -60,9 +59,10 @@ void UBTService_TargetDetect::TickNode(UBehaviorTreeComponent& OwnerComp, uint8*
 
 	else if (AAICharacter* AICharacter = Cast<AAICharacter>(Controller->GetPawn()))
 	{
-		// AICharacter이 아닐 경우 정지.
 		if (!IsValid(AICharacter))
 		{
+			LOG(TEXT("1"));
+
 			return;
 		}
 
@@ -70,13 +70,17 @@ void UBTService_TargetDetect::TickNode(UBehaviorTreeComponent& OwnerComp, uint8*
 
 		AILoc.Z -= AICharacter->GetHalfHeight();
 
-		FHitResult	result;
+		FHitResult result;
 
-		FCollisionQueryParams	param(NAME_None, false, AICharacter);
+		FCollisionQueryParams param(NAME_None, false, AICharacter);
+
+		LOG(TEXT("2"));
 
 		bool Collision = GetWorld()->SweepSingleByChannel(result, AILoc, AILoc, FQuat::Identity, ECollisionChannel::ECC_GameTraceChannel5, FCollisionShape::MakeSphere(AICharacter->GetAIState()->GetInteractionDistance()), param);
 
 #if ENABLE_DRAW_DEBUG
+
+		LOG(TEXT("3"));
 
 		FColor	DrawColor = Collision ? FColor::Red : FColor::Green;
 
@@ -97,6 +101,8 @@ void UBTService_TargetDetect::TickNode(UBehaviorTreeComponent& OwnerComp, uint8*
 
 	else
 	{
+		LOG(TEXT("4"));
+
 		return;
 	}
 }

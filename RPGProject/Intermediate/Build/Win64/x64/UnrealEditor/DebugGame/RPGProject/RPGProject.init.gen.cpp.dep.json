@@ -1,0 +1,13 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\unreal\\rpgproject\\rpgproject\\intermediate\\build\\win64\\unrealeditor\\inc\\rpgproject\\uht\\rpgproject.init.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\unreal\\rpgproject\\rpgproject\\intermediate\\build\\win64\\x64\\rpgprojecteditor\\debuggame\\engine\\sharedpch.engine.nonoptimized.shadowerrors.h.pch",
+        "Includes": [
+            "c:\\unreal\\rpgproject\\rpgproject\\intermediate\\build\\win64\\x64\\unrealeditor\\debuggame\\rpgproject\\definitions.rpgproject.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

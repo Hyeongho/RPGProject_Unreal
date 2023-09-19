@@ -1,10 +1,12 @@
 C:\Unreal\RPGProject\RPGProject\Source\RPGProject\AI\AIModule\BTTask_MoveInteraction.cpp
 /I .
-/I C:\Unreal\RPGProject\RPGProject\Intermediate\Build\Win64\UnrealEditor\Inc\RPGProject\UHT
-/I C:\Unreal\RPGProject\RPGProject\Source
+/I ..\Intermediate\Build\Win64\UnrealEditor\Inc\AIModule\UHT
+/I Runtime\NavigationSystem\Public
+/I Runtime\AIModule\Public
+/I Runtime\AIModule\Classes
+/I Runtime
 /I Runtime\TraceLog\Public
 /I Runtime\Core\Public
-/I Runtime
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\CoreUObject\UHT
 /I Runtime\CoreUObject\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\Engine\UHT
@@ -197,7 +199,6 @@ C:\Unreal\RPGProject\RPGProject\Source\RPGProject\AI\AIModule\BTTask_MoveInterac
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\PropertyPath\UHT
 /I Runtime\PropertyPath\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\NavigationSystem\UHT
-/I Runtime\NavigationSystem\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\GeometryCollectionEngine\UHT
 /I Runtime\Experimental\GeometryCollectionEngine\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\MSQS\UHT
@@ -262,9 +263,6 @@ C:\Unreal\RPGProject\RPGProject\Source\RPGProject\AI\AIModule\BTTask_MoveInterac
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\GameplayTasks\UHT
 /I Runtime\GameplayTasks\Classes
 /I Runtime\GameplayTasks\Public
-/I ..\Intermediate\Build\Win64\UnrealEditor\Inc\AIModule\UHT
-/I Runtime\AIModule\Public
-/I Runtime\AIModule\Classes
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\ClothSysRuntimeIntrfc\UHT
 /I Runtime\ClothingSystemRuntimeInterface\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\IrisCore\UHT
@@ -274,6 +272,8 @@ C:\Unreal\RPGProject\RPGProject\Source\RPGProject\AI\AIModule\BTTask_MoveInterac
 /I Runtime\MovieSceneCapture\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\AnimationDataController\UHT
 /I Developer\AnimationDataController\Public
+/I C:\Unreal\RPGProject\RPGProject\Intermediate\Build\Win64\UnrealEditor\Inc\RPGProject\UHT
+/I C:\Unreal\RPGProject\RPGProject\Source
 /external:W0
 /external:I ThirdParty\mimalloc\include
 /external:I ThirdParty\LibTiff\Source\Win64

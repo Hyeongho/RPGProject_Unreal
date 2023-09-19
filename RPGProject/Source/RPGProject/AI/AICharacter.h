@@ -54,7 +54,7 @@ public:
 	}
 
 public:
-	const TObjectPtr<class UAIState>& GetAIState()	const
+	const TObjectPtr<class UAIState>& GetAIState() const
 	{
 		return m_AIState;
 	}

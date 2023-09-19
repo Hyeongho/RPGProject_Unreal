@@ -118,9 +118,4 @@ bool UBTDecorator_CheckTargetDistance::CalculateRawConditionValue(UBehaviorTreeC
 
 		return Distance <= TypeDistance;
 	}
-
-	else
-	{
-		return false;
-	}
 }

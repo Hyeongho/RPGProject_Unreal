@@ -86,6 +86,16 @@ public:
 		m_InteractionDistance = Data->InteractionDistance;
 	}
 
+	void SetDamage(float Damage)
+	{
+		m_HP -= Damage;
+	}
+
+	int32 GetHP() const
+	{
+		return m_HP;
+	}
+
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
