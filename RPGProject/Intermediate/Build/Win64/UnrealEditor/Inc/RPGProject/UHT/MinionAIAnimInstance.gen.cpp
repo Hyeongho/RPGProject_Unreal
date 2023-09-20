@@ -16,6 +16,13 @@ void EmptyLinkFunctionForGeneratedCodeMinionAIAnimInstance() {}
 	RPGPROJECT_API UClass* Z_Construct_UClass_UMinionAIAnimInstance_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_RPGProject();
 // End Cross Module References
+	DEFINE_FUNCTION(UMinionAIAnimInstance::execAnimNotify_Death)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->AnimNotify_Death();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(UMinionAIAnimInstance::execAnimNotify_AttackEnd)
 	{
 		P_FINISH;
@@ -36,6 +43,7 @@ void EmptyLinkFunctionForGeneratedCodeMinionAIAnimInstance() {}
 		static const FNameNativePtrPair Funcs[] = {
 			{ "AnimNotify_Attack", &UMinionAIAnimInstance::execAnimNotify_Attack },
 			{ "AnimNotify_AttackEnd", &UMinionAIAnimInstance::execAnimNotify_AttackEnd },
+			{ "AnimNotify_Death", &UMinionAIAnimInstance::execAnimNotify_Death },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -83,6 +91,28 @@ void EmptyLinkFunctionForGeneratedCodeMinionAIAnimInstance() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UMinionAIAnimInstance_AnimNotify_Death_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UMinionAIAnimInstance_AnimNotify_Death_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "AI/MinionAIAnimInstance.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMinionAIAnimInstance_AnimNotify_Death_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UMinionAIAnimInstance, nullptr, "AnimNotify_Death", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UMinionAIAnimInstance_AnimNotify_Death_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UMinionAIAnimInstance_AnimNotify_Death_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UMinionAIAnimInstance_AnimNotify_Death()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UMinionAIAnimInstance_AnimNotify_Death_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(UMinionAIAnimInstance);
 	UClass* Z_Construct_UClass_UMinionAIAnimInstance_NoRegister()
 	{
@@ -100,6 +130,10 @@ void EmptyLinkFunctionForGeneratedCodeMinionAIAnimInstance() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_m_AttackMontage_MetaData[];
 #endif
 		static const UECodeGen_Private::FArrayPropertyParams NewProp_m_AttackMontage;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_m_DeathMontage_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPtrPropertyParams NewProp_m_DeathMontage;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -111,6 +145,7 @@ void EmptyLinkFunctionForGeneratedCodeMinionAIAnimInstance() {}
 	const FClassFunctionLinkInfo Z_Construct_UClass_UMinionAIAnimInstance_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_UMinionAIAnimInstance_AnimNotify_Attack, "AnimNotify_Attack" }, // 3517888371
 		{ &Z_Construct_UFunction_UMinionAIAnimInstance_AnimNotify_AttackEnd, "AnimNotify_AttackEnd" }, // 520299685
+		{ &Z_Construct_UFunction_UMinionAIAnimInstance_AnimNotify_Death, "AnimNotify_Death" }, // 3341648592
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UMinionAIAnimInstance_Statics::Class_MetaDataParams[] = {
@@ -129,9 +164,18 @@ void EmptyLinkFunctionForGeneratedCodeMinionAIAnimInstance() {}
 	};
 #endif
 	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UMinionAIAnimInstance_Statics::NewProp_m_AttackMontage = { "m_AttackMontage", nullptr, (EPropertyFlags)0x0024080000000005, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UMinionAIAnimInstance, m_AttackMontage), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_UMinionAIAnimInstance_Statics::NewProp_m_AttackMontage_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UMinionAIAnimInstance_Statics::NewProp_m_AttackMontage_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UMinionAIAnimInstance_Statics::NewProp_m_DeathMontage_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Data" },
+		{ "ModuleRelativePath", "AI/MinionAIAnimInstance.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPtrPropertyParams Z_Construct_UClass_UMinionAIAnimInstance_Statics::NewProp_m_DeathMontage = { "m_DeathMontage", nullptr, (EPropertyFlags)0x0024080000000005, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UMinionAIAnimInstance, m_DeathMontage), Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UMinionAIAnimInstance_Statics::NewProp_m_DeathMontage_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UMinionAIAnimInstance_Statics::NewProp_m_DeathMontage_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UMinionAIAnimInstance_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMinionAIAnimInstance_Statics::NewProp_m_AttackMontage_Inner,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMinionAIAnimInstance_Statics::NewProp_m_AttackMontage,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMinionAIAnimInstance_Statics::NewProp_m_DeathMontage,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UMinionAIAnimInstance_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UMinionAIAnimInstance>::IsAbstract,
@@ -170,9 +214,9 @@ void EmptyLinkFunctionForGeneratedCodeMinionAIAnimInstance() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_RPGProject_RPGProject_Source_RPGProject_AI_MinionAIAnimInstance_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UMinionAIAnimInstance, UMinionAIAnimInstance::StaticClass, TEXT("UMinionAIAnimInstance"), &Z_Registration_Info_UClass_UMinionAIAnimInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMinionAIAnimInstance), 356079894U) },
+		{ Z_Construct_UClass_UMinionAIAnimInstance, UMinionAIAnimInstance::StaticClass, TEXT("UMinionAIAnimInstance"), &Z_Registration_Info_UClass_UMinionAIAnimInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMinionAIAnimInstance), 2195200093U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_RPGProject_RPGProject_Source_RPGProject_AI_MinionAIAnimInstance_h_180401097(TEXT("/Script/RPGProject"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_RPGProject_RPGProject_Source_RPGProject_AI_MinionAIAnimInstance_h_2784471328(TEXT("/Script/RPGProject"),
 		Z_CompiledInDeferFile_FID_Unreal_RPGProject_RPGProject_Source_RPGProject_AI_MinionAIAnimInstance_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_RPGProject_RPGProject_Source_RPGProject_AI_MinionAIAnimInstance_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

@@ -53,6 +53,8 @@ public:
 		return m_AttackEnd;
 	}
 
+	bool IsDeath() const;
+
 public:
 	const TObjectPtr<class UAIState>& GetAIState() const
 	{
@@ -90,6 +92,8 @@ public:
 
 public:
 	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, class AController* EventInstigator, AActor* DamageCauser);
+
+	virtual void Death();
 
 public:
 	void SetCollisionProfile(const FName& Name);

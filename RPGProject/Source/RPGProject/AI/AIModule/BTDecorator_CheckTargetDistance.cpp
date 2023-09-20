@@ -2,6 +2,7 @@
 
 
 #include "BTDecorator_CheckTargetDistance.h"
+#include "../DefaultAIController.h"
 #include "../AIPawn.h"
 #include "../AIState.h"
 #include "../AICharacter.h"
@@ -117,5 +118,10 @@ bool UBTDecorator_CheckTargetDistance::CalculateRawConditionValue(UBehaviorTreeC
 		//LOG(TEXT("CheckDist : %.5f Dist : %.5f"), TypeDistance, Distance);
 
 		return Distance <= TypeDistance;
+	}
+
+	else
+	{
+		return false;
 	}
 }

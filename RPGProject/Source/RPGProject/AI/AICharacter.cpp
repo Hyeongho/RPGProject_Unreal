@@ -44,6 +44,16 @@ const FAIDataTable* AAICharacter::FindAIData(const FName& Name)
 	return m_AIDataTable->FindRow<FAIDataTable>(Name, TEXT(""));
 }
 
+bool AAICharacter::IsDeath() const
+{
+	if (m_AIState->GetHP() <= 0)
+	{
+		return true;
+	}
+
+	return false;
+}
+
 void AAICharacter::SetSpawnPoint(AAISpawnPoint* SpawnPoint)
 {
 	m_SpawnPoint = SpawnPoint;
@@ -106,6 +116,10 @@ float AAICharacter::TakeDamage(float DamageAmount, FDamageEvent const& DamageEve
 	LOG(TEXT("HP : %d"), m_AIState->GetHP());
 
 	return Damage;
+}
+
+void AAICharacter::Death()
+{
 }
 
 void AAICharacter::SetCollisionProfile(const FName& Name)

@@ -2,27 +2,17 @@
   Running UnrealBuildTool: dotnet "..\..\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" RPGProjectEditor Win64 Development -Project="C:\Unreal\RPGProject\RPGProject\RPGProject.uproject" -WaitMutex -FromMsBuild
   Log file: C:\Users\user\AppData\Local\UnrealBuildTool\Log.txt
   Using 'git status' to determine working set for adaptive non-unity build (C:\Unreal\RPGProject).
-  Waiting for 'git status' command to complete
-  Invalidating makefile for RPGProjectEditor (working set of source files changed)
   Building RPGProjectEditor...
   Using Visual Studio 2022 14.34.31946 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933) and Windows 10.0.22621.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  [Adaptive Build] Excluded from RPGProject unity file: GameInfo.cpp, RPGProjectGameModeBase.cpp, AICharacter.cpp, AIState.cpp, BTDecorator_CheckTargetDistance.cpp, BTDecorator_IsDeath.cpp, BTService_IsAlive.cpp, BTService_TargetDetect.cpp, BTTask_Death.cpp, KwangCharacter.cpp, BTDecorator_IsDeath.gen.cpp, BTService_IsAlive.gen.cpp, BTTask_Death.gen.cpp, RPGProject.init.gen.cpp
+  [Adaptive Build] Excluded from RPGProject unity file: AICharacter.cpp, AIMinionCharacter.cpp, AIPawn.cpp, DefaultAIAnimInstance.cpp, MinionAIAnimInstance.cpp, BTDecorator_CheckTargetDistance.cpp, BTService_IsAlive.cpp, BTService_TargetDetect.cpp, BTTask_Death.cpp, AIMinionCharacter.gen.cpp, MinionAIAnimInstance.gen.cpp, RPGProject.init.gen.cpp
   Determining max actions to execute in parallel (10 physical cores, 16 logical cores)
     Executing up to 10 processes, one per physical core
-    Requested 1.5 GB free memory per action, 13.32 GB available: limiting max parallel actions to 8
-  Building 6 actions with 6 processes...
-  [1/6] Compile [x64] BTDecorator_CheckTargetDistance.cpp
-C:\Unreal\RPGProject\RPGProject\Source\RPGProject\AI\AIModule\BTDecorator_CheckTargetDistance.cpp(22): error C2027: 정의되지 않은 형식 'AAIController'을(를) 사용했습니다.
-  C:\Program Files\Epic Games\UE_5.2\Engine\Source\Runtime\AIModule\Classes\BehaviorTree\BTNode.h(23): note: 'AAIController' 선언을 참조하십시오.
-C:\Unreal\RPGProject\RPGProject\Source\RPGProject\AI\AIModule\BTDecorator_CheckTargetDistance.cpp(42): error C2027: 정의되지 않은 형식 'AAIController'을(를) 사용했습니다.
-  C:\Program Files\Epic Games\UE_5.2\Engine\Source\Runtime\AIModule\Classes\BehaviorTree\BTNode.h(23): note: 'AAIController' 선언을 참조하십시오.
-C:\Unreal\RPGProject\RPGProject\Source\RPGProject\AI\AIModule\BTDecorator_CheckTargetDistance.cpp(71): error C2027: 정의되지 않은 형식 'AAIController'을(를) 사용했습니다.
-  C:\Program Files\Epic Games\UE_5.2\Engine\Source\Runtime\AIModule\Classes\BehaviorTree\BTNode.h(23): note: 'AAIController' 선언을 참조하십시오.
-C:\Unreal\RPGProject\RPGProject\Source\RPGProject\AI\AIModule\BTDecorator_CheckTargetDistance.cpp(91): error C2027: 정의되지 않은 형식 'AAIController'을(를) 사용했습니다.
-  C:\Program Files\Epic Games\UE_5.2\Engine\Source\Runtime\AIModule\Classes\BehaviorTree\BTNode.h(23): note: 'AAIController' 선언을 참조하십시오.
-  [2/6] Compile [x64] BTService_TargetDetect.cpp
-  [3/6] Compile [x64] Module.RPGProject.cpp
-  [4/6] Link [x64] UnrealEditor-RPGProject-0030.dll cancelled
-  [5/6] Link [x64] UnrealEditor-RPGProject-0030.lib cancelled
-  [6/6] WriteMetadata RPGProjectEditor.target cancelled
-C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.MakeFile.Targets(44,5): error MSB3073: ""C:\Program Files\Epic Games\UE_5.2\Engine\Build\BatchFiles\Build.bat" RPGProjectEditor Win64 Development -Project="C:\Unreal\RPGProject\RPGProject\RPGProject.uproject" -WaitMutex -FromMsBuild" 명령이 종료되었습니다(코드: 6).
+  Building 4 actions with 4 processes...
+  [1/4] Compile [x64] AIMinionCharacter.cpp
+  [2/4] Link [x64] UnrealEditor-RPGProject-0030.lib
+     C:\Unreal\RPGProject\RPGProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGProject\UnrealEditor-RPGProject-0030.lib 라이브러리 및 C:\Unreal\RPGProject\RPGProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGProject\UnrealEditor-RPGProject-0030.exp 개체를 생성하고 있습니다.
+  [3/4] Link [x64] UnrealEditor-RPGProject-0030.dll
+     C:\Unreal\RPGProject\RPGProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGProject\UnrealEditor-RPGProject-0030.suppressed.lib 라이브러리 및 C:\Unreal\RPGProject\RPGProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGProject\UnrealEditor-RPGProject-0030.suppressed.exp 개체를 생성하고 있습니다.
+  [4/4] WriteMetadata RPGProjectEditor.target
+  Total time in Parallel executor: 7.51 seconds
+  Total execution time: 8.79 seconds

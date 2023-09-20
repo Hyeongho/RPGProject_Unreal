@@ -61,8 +61,6 @@ void UBTService_TargetDetect::TickNode(UBehaviorTreeComponent& OwnerComp, uint8*
 	{
 		if (!IsValid(AICharacter))
 		{
-			LOG(TEXT("1"));
-
 			return;
 		}
 
@@ -74,13 +72,9 @@ void UBTService_TargetDetect::TickNode(UBehaviorTreeComponent& OwnerComp, uint8*
 
 		FCollisionQueryParams param(NAME_None, false, AICharacter);
 
-		LOG(TEXT("2"));
-
 		bool Collision = GetWorld()->SweepSingleByChannel(result, AILoc, AILoc, FQuat::Identity, ECollisionChannel::ECC_GameTraceChannel5, FCollisionShape::MakeSphere(AICharacter->GetAIState()->GetInteractionDistance()), param);
 
 #if ENABLE_DRAW_DEBUG
-
-		LOG(TEXT("3"));
 
 		FColor	DrawColor = Collision ? FColor::Red : FColor::Green;
 
@@ -101,8 +95,6 @@ void UBTService_TargetDetect::TickNode(UBehaviorTreeComponent& OwnerComp, uint8*
 
 	else
 	{
-		LOG(TEXT("4"));
-
 		return;
 	}
 }

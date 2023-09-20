@@ -47,6 +47,7 @@ public:
 
 public:
 	virtual void Attack();
+	virtual void Death();
 
 public:
 	virtual void NativeInitializeAnimation();

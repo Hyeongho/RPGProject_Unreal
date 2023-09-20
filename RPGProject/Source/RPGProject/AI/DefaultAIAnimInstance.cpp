@@ -13,6 +13,10 @@ void UDefaultAIAnimInstance::Attack()
 {
 }
 
+void UDefaultAIAnimInstance::Death()
+{
+}
+
 void UDefaultAIAnimInstance::NativeInitializeAnimation()
 {
 	Super::NativeInitializeAnimation();

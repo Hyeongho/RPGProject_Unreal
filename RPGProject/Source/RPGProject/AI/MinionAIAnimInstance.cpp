@@ -35,6 +35,42 @@ void UMinionAIAnimInstance::Attack()
 	m_AttackIndex = (m_AttackIndex + 1) % m_AttackMontage.Num();
 }
 
+void UMinionAIAnimInstance::Death()
+{
+	if (m_AnimType != EAIAnimType::Death || Montage_IsPlaying(m_DeathMontage))
+	{
+		LOG(TEXT("Attack false"));
+
+		return;
+	}
+
+	if (AAIPawn* AIPawn = Cast<AAIPawn>(TryGetPawnOwner()))
+	{
+		if (IsValid(AIPawn))
+		{
+			AIPawn->AutoPossessAI = EAutoPossessAI::Disabled;
+			AIPawn->AIControllerClass = nullptr;
+
+			//AIPawn->Death();
+		}
+	}
+
+	else if (AAICharacter* AICharacter = Cast<AAICharacter>(TryGetPawnOwner()))
+	{
+		if (IsValid(AICharacter))
+		{
+			AICharacter->AutoPossessAI = EAutoPossessAI::Disabled;
+			AICharacter->AIControllerClass = nullptr;
+
+			//AICharacter->Death();
+		}
+	}
+
+	Montage_SetPosition(m_DeathMontage, 0.f);
+
+	Montage_Play(m_DeathMontage);
+}
+
 void UMinionAIAnimInstance::NativeInitializeAnimation()
 {
 	Super::NativeInitializeAnimation();
@@ -88,4 +124,23 @@ void UMinionAIAnimInstance::AnimNotify_AttackEnd()
 	}
 
 	m_AttackEnable = true;
+}
+
+void UMinionAIAnimInstance::AnimNotify_Death()
+{
+	if (AAIPawn* AIPawn = Cast<AAIPawn>(TryGetPawnOwner()))
+	{
+		if (IsValid(AIPawn))
+		{
+			AIPawn->Death();
+		}
+	}
+
+	else if (AAICharacter* AICharacter = Cast<AAICharacter>(TryGetPawnOwner()))
+	{
+		if (IsValid(AICharacter))
+		{
+			AICharacter->Death();
+		}
+	}
 }

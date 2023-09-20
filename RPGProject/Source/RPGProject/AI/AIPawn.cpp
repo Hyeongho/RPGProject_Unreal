@@ -47,6 +47,16 @@ const FAIDataTable* AAIPawn::FindAIData(const FName& Name)
 	return m_AIDataTable->FindRow<FAIDataTable>(Name, TEXT(""));
 }
 
+bool AAIPawn::IsDeath() const
+{
+	if (m_AIState->GetHP() <= 0)
+	{
+		return true;
+	}
+
+	return false;
+}
+
 void AAIPawn::SetSpawnPoint(AAISpawnPoint* SpawnPoint)
 {
 	m_SpawnPoint = SpawnPoint;
@@ -115,6 +125,10 @@ float AAIPawn::TakeDamage(float DamageAmount, FDamageEvent const& DamageEvent, A
 	float Damage = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
 
 	return Damage;
+}
+
+void AAIPawn::Death()
+{
 }
 
 // Called every frame

@@ -20,10 +20,14 @@ protected:
 	UPROPERTY(Category = Data, EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
 	TArray<TObjectPtr<UAnimMontage>> m_AttackMontage;
 
+	UPROPERTY(Category = Data, EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
+	TObjectPtr<UAnimMontage> m_DeathMontage;
+
 	bool m_AttackEnable;
 
 public:
 	virtual void Attack();
+	virtual void Death();
 
 public:
 	virtual void NativeInitializeAnimation();
@@ -44,4 +48,7 @@ public:
 
 	UFUNCTION()
 	void AnimNotify_AttackEnd();
+
+	UFUNCTION()
+	void AnimNotify_Death();
 };

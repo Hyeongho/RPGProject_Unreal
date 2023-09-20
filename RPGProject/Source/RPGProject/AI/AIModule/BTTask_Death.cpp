@@ -25,15 +25,36 @@ EBTNodeResult::Type UBTTask_Death::ExecuteTask(UBehaviorTreeComponent& OwnerComp
 
 	int32 HP = Controller->GetBlackboardComponent()->GetValueAsInt(TEXT("HP"));
 
-	AAICharacter* AICharacter = Cast<AAICharacter>(Controller->GetPawn());
-
-	if (HP > 0)
+	if (AAIPawn* AIPawn = Cast<AAIPawn>(Controller->GetPawn()))
 	{
-		Controller->StopMovement();
+		if (HP > 0)
+		{
+			Controller->StopMovement();
 
-		AICharacter->GetAIAnimInstance()->ChangeAnim(EAIAnimType::Idle);
+			AIPawn->GetAIAnimInstance()->ChangeAnim(EAIAnimType::Idle);
 
-		return EBTNodeResult::Failed;
+			return EBTNodeResult::Failed;
+		}
+
+		AIPawn->GetAIAnimInstance()->ChangeAnim(EAIAnimType::Death);
+
+		AIPawn->GetAIAnimInstance()->Death();
+	}
+
+	else if (AAICharacter* AICharacter = Cast<AAICharacter>(Controller->GetPawn()))
+	{
+		if (HP > 0)
+		{
+			Controller->StopMovement();
+
+			AICharacter->GetAIAnimInstance()->ChangeAnim(EAIAnimType::Idle);
+
+			return EBTNodeResult::Failed;
+		}
+
+		AICharacter->GetAIAnimInstance()->ChangeAnim(EAIAnimType::Death);
+
+		AICharacter->GetAIAnimInstance()->Death();
 	}
 
 	return EBTNodeResult::InProgress;
@@ -52,30 +73,30 @@ void UBTTask_Death::TickTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemor
 
 	AAIController* Controller = OwnerComp.GetAIOwner();
 
-	AAICharacter* AICharacter = Cast<AAICharacter>(Controller->GetPawn());
-
-	if (!IsValid(AICharacter))
-	{
-		FinishLatentTask(OwnerComp, EBTNodeResult::Failed);
-
-		Controller->StopMovement();
-
-		AICharacter->GetAIAnimInstance()->ChangeAnim(EAIAnimType::Idle);
-
-		return;
-	}
-
 	int32 HP = Controller->GetBlackboardComponent()->GetValueAsInt(TEXT("HP"));
 
-	if (HP > 0)
+	if (AAIPawn* AIPawn = Cast<AAIPawn>(Controller->GetPawn()))
 	{
-		FinishLatentTask(OwnerComp, EBTNodeResult::Failed);
+		if (HP > 0)
+		{
+			Controller->StopMovement();
 
-		Controller->StopMovement();
+			AIPawn->GetAIAnimInstance()->ChangeAnim(EAIAnimType::Idle);
 
-		AICharacter->GetAIAnimInstance()->ChangeAnim(EAIAnimType::Idle);
+			return;
+		}
+	}
 
-		return;
+	else if (AAICharacter* AICharacter = Cast<AAICharacter>(Controller->GetPawn()))
+	{
+		if (HP > 0)
+		{
+			Controller->StopMovement();
+
+			AICharacter->GetAIAnimInstance()->ChangeAnim(EAIAnimType::Idle);
+
+			return;
+		}
 	}
 }
 
