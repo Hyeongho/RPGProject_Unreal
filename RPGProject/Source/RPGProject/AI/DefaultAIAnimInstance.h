@@ -9,6 +9,7 @@
 UENUM(BlueprintType)
 enum class EAIAnimType : uint8
 {
+	Start, 
 	Idle,
 	Walk,
 	Run,

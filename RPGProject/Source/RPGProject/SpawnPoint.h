@@ -16,10 +16,35 @@ public:
 	ASpawnPoint();
 
 protected:
+	UPROPERTY(Category = Component, VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	TObjectPtr<USceneComponent>	m_Root;
+
+#if WITH_EDITORONLY_DATA
+	UPROPERTY()
+	TObjectPtr<UArrowComponent> m_Arrow;
+#endif
+
+	UPROPERTY(Category = Component, EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	TSubclassOf<class AAICharacter> m_SpawnClass;
+
+	TObjectPtr<class AAICharacter> m_SpawnObject;
+
+	UPROPERTY(Category = Component, EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	float m_SpawnTime;
+
+	float m_Time;
+
+public:
+	void ClearObject();
+
+private:
+	void SpawnObject();
+
+protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:	
+public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 

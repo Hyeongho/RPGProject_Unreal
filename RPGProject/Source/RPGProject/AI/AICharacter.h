@@ -3,6 +3,7 @@
 #pragma once
 
 #include "../GameInfo.h"
+#include "AIPawn.h"
 #include "GameFramework/Character.h"
 #include "AICharacter.generated.h"
 

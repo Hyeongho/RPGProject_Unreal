@@ -38,6 +38,7 @@ void EmptyLinkFunctionForGeneratedCodeDefaultAIAnimInstance() {}
 		static const UECodeGen_Private::FEnumParams EnumParams;
 	};
 	const UECodeGen_Private::FEnumeratorParam Z_Construct_UEnum_RPGProject_EAIAnimType_Statics::Enumerators[] = {
+		{ "EAIAnimType::Start", (int64)EAIAnimType::Start },
 		{ "EAIAnimType::Idle", (int64)EAIAnimType::Idle },
 		{ "EAIAnimType::Walk", (int64)EAIAnimType::Walk },
 		{ "EAIAnimType::Run", (int64)EAIAnimType::Run },
@@ -58,6 +59,7 @@ void EmptyLinkFunctionForGeneratedCodeDefaultAIAnimInstance() {}
 		{ "Skill1.Name", "EAIAnimType::Skill1" },
 		{ "Skill2.Name", "EAIAnimType::Skill2" },
 		{ "Skill3.Name", "EAIAnimType::Skill3" },
+		{ "Start.Name", "EAIAnimType::Start" },
 		{ "Walk.Name", "EAIAnimType::Walk" },
 	};
 #endif
@@ -123,7 +125,7 @@ void EmptyLinkFunctionForGeneratedCodeDefaultAIAnimInstance() {}
 		{ "ModuleRelativePath", "AI/DefaultAIAnimInstance.h" },
 	};
 #endif
-	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UDefaultAIAnimInstance_Statics::NewProp_m_AnimType = { "m_AnimType", nullptr, (EPropertyFlags)0x0020080000020015, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UDefaultAIAnimInstance, m_AnimType), Z_Construct_UEnum_RPGProject_EAIAnimType, METADATA_PARAMS(Z_Construct_UClass_UDefaultAIAnimInstance_Statics::NewProp_m_AnimType_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UDefaultAIAnimInstance_Statics::NewProp_m_AnimType_MetaData)) }; // 2385863316
+	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UDefaultAIAnimInstance_Statics::NewProp_m_AnimType = { "m_AnimType", nullptr, (EPropertyFlags)0x0020080000020015, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UDefaultAIAnimInstance, m_AnimType), Z_Construct_UEnum_RPGProject_EAIAnimType, METADATA_PARAMS(Z_Construct_UClass_UDefaultAIAnimInstance_Statics::NewProp_m_AnimType_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UDefaultAIAnimInstance_Statics::NewProp_m_AnimType_MetaData)) }; // 4008858893
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UDefaultAIAnimInstance_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDefaultAIAnimInstance_Statics::NewProp_m_AnimType_Underlying,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDefaultAIAnimInstance_Statics::NewProp_m_AnimType,
@@ -166,12 +168,12 @@ void EmptyLinkFunctionForGeneratedCodeDefaultAIAnimInstance() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FEnumRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_RPGProject_RPGProject_Source_RPGProject_AI_DefaultAIAnimInstance_h_Statics::EnumInfo[] = {
-		{ EAIAnimType_StaticEnum, TEXT("EAIAnimType"), &Z_Registration_Info_UEnum_EAIAnimType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2385863316U) },
+		{ EAIAnimType_StaticEnum, TEXT("EAIAnimType"), &Z_Registration_Info_UEnum_EAIAnimType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 4008858893U) },
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_RPGProject_RPGProject_Source_RPGProject_AI_DefaultAIAnimInstance_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UDefaultAIAnimInstance, UDefaultAIAnimInstance::StaticClass, TEXT("UDefaultAIAnimInstance"), &Z_Registration_Info_UClass_UDefaultAIAnimInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDefaultAIAnimInstance), 4100962210U) },
+		{ Z_Construct_UClass_UDefaultAIAnimInstance, UDefaultAIAnimInstance::StaticClass, TEXT("UDefaultAIAnimInstance"), &Z_Registration_Info_UClass_UDefaultAIAnimInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDefaultAIAnimInstance), 2685581510U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_RPGProject_RPGProject_Source_RPGProject_AI_DefaultAIAnimInstance_h_2261508384(TEXT("/Script/RPGProject"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_RPGProject_RPGProject_Source_RPGProject_AI_DefaultAIAnimInstance_h_2390782398(TEXT("/Script/RPGProject"),
 		Z_CompiledInDeferFile_FID_Unreal_RPGProject_RPGProject_Source_RPGProject_AI_DefaultAIAnimInstance_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_RPGProject_RPGProject_Source_RPGProject_AI_DefaultAIAnimInstance_h_Statics::ClassInfo),
 		nullptr, 0,
 		Z_CompiledInDeferFile_FID_Unreal_RPGProject_RPGProject_Source_RPGProject_AI_DefaultAIAnimInstance_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_RPGProject_RPGProject_Source_RPGProject_AI_DefaultAIAnimInstance_h_Statics::EnumInfo));

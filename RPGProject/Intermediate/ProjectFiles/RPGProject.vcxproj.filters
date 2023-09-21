@@ -102,6 +102,12 @@
     <ClInclude Include="..\..\Source\RPGProject\AI\AIPawn.h">
       <Filter>Source\RPGProject\AI</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\RPGProject\AI\AISevarogCharacter.cpp">
+      <Filter>Source\RPGProject\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RPGProject\AI\AISevarogCharacter.h">
+      <Filter>Source\RPGProject\AI</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\RPGProject\AI\AIState.cpp">
       <Filter>Source\RPGProject\AI</Filter>
     </ClCompile>
@@ -124,6 +130,18 @@
       <Filter>Source\RPGProject\AI</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\RPGProject\AI\MinionAIAnimInstance.h">
+      <Filter>Source\RPGProject\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\RPGProject\AI\SevarogAIController.cpp">
+      <Filter>Source\RPGProject\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RPGProject\AI\SevarogAIController.h">
+      <Filter>Source\RPGProject\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\RPGProject\AI\SevarogAnimInstance.cpp">
+      <Filter>Source\RPGProject\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RPGProject\AI\SevarogAnimInstance.h">
       <Filter>Source\RPGProject\AI</Filter>
     </ClInclude>
     <Filter Include="Source\RPGProject\AI\AIModule">
