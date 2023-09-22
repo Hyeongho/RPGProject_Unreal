@@ -3,6 +3,7 @@
 
 #include "AISevarogCharacter.h"
 #include "SevarogAIController.h"
+#include "SevarogAnimInstance.h"
 
 AAISevarogCharacter::AAISevarogCharacter()
 {
@@ -21,8 +22,6 @@ AAISevarogCharacter::AAISevarogCharacter()
 	GetMesh()->SetRelativeLocation(FVector(0.0, 0.0, -92.0));
 	GetMesh()->SetRelativeRotation(FRotator(0.0, -90.0, 0.0));
 
-	// 애니메이션 블루프린트를 지정한다.
-
 	static ConstructorHelpers::FClassFinder<UAnimInstance> AnimAsset(TEXT("/Script/Engine.AnimBlueprint'/Game/AI/AB_AISevarog.AB_AISevarog_C'"));
 
 	if (AnimAsset.Succeeded())
@@ -30,12 +29,16 @@ AAISevarogCharacter::AAISevarogCharacter()
 		GetMesh()->SetAnimInstanceClass(AnimAsset.Class);
 	}
 
+	AIControllerClass = nullptr;
+
 	AIControllerClass = ASevarogAIController::StaticClass();
 }
 
 void AAISevarogCharacter::BeginPlay()
 {
 	Super::BeginPlay();
+
+	m_Anim = Cast<USevarogAnimInstance>(GetMesh()->GetAnimInstance());
 }
 
 void AAISevarogCharacter::EndPlay(const EEndPlayReason::Type EndPlayReason)

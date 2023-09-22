@@ -4,30 +4,15 @@
   Using 'git status' to determine working set for adaptive non-unity build (C:\Unreal\RPGProject).
   Building RPGProjectEditor...
   Using Visual Studio 2022 14.34.31946 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933) and Windows 10.0.22621.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  [Adaptive Build] Excluded from RPGProject unity file: SpawnPoint.cpp, AICharacter.cpp, AISevarogCharacter.cpp, DefaultAIAnimInstance.cpp, SevarogAIController.cpp, SevarogAnimInstance.cpp, AISevarogCharacter.gen.cpp, DefaultAIAnimInstance.gen.cpp, MinionAIAnimInstance.gen.cpp, RPGProject.init.gen.cpp, SevarogAIController.gen.cpp, SevarogAnimInstance.gen.cpp, SpawnPoint.gen.cpp
+  [Adaptive Build] Excluded from RPGProject unity file: AIMinionPawn.cpp, AISevarogCharacter.cpp, SevarogAnimInstance.cpp, BTDecorator_CheckTargetDistance.cpp, BTDecorator_IsDeath.cpp, BTService_IsAlive.cpp, BTService_TargetDetect.cpp, BTTask_Death.cpp, BTTask_MoveInteraction.cpp, DefaultEffect.cpp, DefaultEffect.gen.cpp, RPGProject.init.gen.cpp, SevarogAnimInstance.gen.cpp
   Determining max actions to execute in parallel (10 physical cores, 16 logical cores)
     Executing up to 10 processes, one per physical core
-  Building 19 actions with 10 processes...
-  [1/19] Resource Default.rc2
-  [2/19] Compile [x64] SharedPCH.Engine.ShadowErrors.cpp
-  [3/19] Compile [x64] RPGProject.init.gen.cpp
-  [4/19] Compile [x64] SevarogAnimInstance.cpp
-  [5/19] Compile [x64] SpawnPoint.gen.cpp
-  [6/19] Compile [x64] AISevarogCharacter.cpp
-  [7/19] Compile [x64] SpawnPoint.cpp
-  [8/19] Compile [x64] SevarogAnimInstance.gen.cpp
-  [9/19] Compile [x64] DefaultAIAnimInstance.cpp
-  [10/19] Compile [x64] DefaultAIAnimInstance.gen.cpp
-  [11/19] Compile [x64] SevarogAIController.gen.cpp
-  [12/19] Compile [x64] SevarogAIController.cpp
-  [13/19] Compile [x64] Module.RPGProject.cpp
-  [14/19] Compile [x64] MinionAIAnimInstance.gen.cpp
-  [15/19] Compile [x64] AISevarogCharacter.gen.cpp
-  [16/19] Compile [x64] AICharacter.cpp
-  [17/19] Link [x64] UnrealEditor-RPGProject-0001.lib
+  Building 4 actions with 4 processes...
+  [1/4] Compile [x64] BTTask_MoveInteraction.cpp
+  [2/4] Link [x64] UnrealEditor-RPGProject-0001.lib
      C:\Unreal\RPGProject\RPGProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGProject\UnrealEditor-RPGProject-0001.lib 라이브러리 및 C:\Unreal\RPGProject\RPGProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGProject\UnrealEditor-RPGProject-0001.exp 개체를 생성하고 있습니다.
-  [18/19] Link [x64] UnrealEditor-RPGProject-0001.dll
+  [3/4] Link [x64] UnrealEditor-RPGProject-0001.dll
      C:\Unreal\RPGProject\RPGProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGProject\UnrealEditor-RPGProject-0001.suppressed.lib 라이브러리 및 C:\Unreal\RPGProject\RPGProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGProject\UnrealEditor-RPGProject-0001.suppressed.exp 개체를 생성하고 있습니다.
-  [19/19] WriteMetadata RPGProjectEditor.target
-  Total time in Parallel executor: 35.72 seconds
-  Total execution time: 38.02 seconds
+  [4/4] WriteMetadata RPGProjectEditor.target
+  Total time in Parallel executor: 7.33 seconds
+  Total execution time: 8.21 seconds

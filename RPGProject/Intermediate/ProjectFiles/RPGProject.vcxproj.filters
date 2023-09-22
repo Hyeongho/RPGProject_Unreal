@@ -195,6 +195,15 @@
     <ClInclude Include="..\..\Source\RPGProject\AI\AIModule\BTTask_NextPatrolPosition.h">
       <Filter>Source\RPGProject\AI\AIModule</Filter>
     </ClInclude>
+    <Filter Include="Source\RPGProject\Effect">
+      <UniqueIdentifier>{242E886B-C933-32D2-9C95-F5448577B314}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\RPGProject\Effect\DefaultEffect.cpp">
+      <Filter>Source\RPGProject\Effect</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RPGProject\Effect\DefaultEffect.h">
+      <Filter>Source\RPGProject\Effect</Filter>
+    </ClInclude>
     <Filter Include="Source\RPGProject\Player">
       <UniqueIdentifier>{BCE49223-B635-3AA2-A2EE-4FC6174D35D0}</UniqueIdentifier>
     </Filter>

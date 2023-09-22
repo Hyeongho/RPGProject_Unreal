@@ -16,6 +16,10 @@ class RPGPROJECT_API USevarogAnimInstance : public UDefaultAIAnimInstance
 public:
 	USevarogAnimInstance();
 
+protected:
+	UPROPERTY(Category = Data, EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
+	TObjectPtr<UAnimMontage> m_StartMontage;
+
 public:
 	virtual void Attack();
 	virtual void Death();
@@ -34,6 +38,12 @@ public:
 	virtual void NativeBeginPlay();
 
 public:
+	void PlayStart();
+
+public:
 	UFUNCTION()
 	void AnimNotify_PlayParticleEffect();
+
+	UFUNCTION()
+	void AnimNotify_StartEnd();
 };

@@ -786,7 +786,15 @@
             "c:\\program files\\epic games\\ue_5.2\\engine\\source\\runtime\\core\\public\\internationalization\\polyglottextdata.h",
             "c:\\unreal\\rpgproject\\rpgproject\\intermediate\\build\\win64\\unrealeditor\\inc\\rpgproject\\uht\\gameinfo.generated.h",
             "c:\\unreal\\rpgproject\\rpgproject\\intermediate\\build\\win64\\unrealeditor\\inc\\rpgproject\\uht\\defaultaianiminstance.generated.h",
-            "c:\\unreal\\rpgproject\\rpgproject\\intermediate\\build\\win64\\unrealeditor\\inc\\rpgproject\\uht\\sevaroganiminstance.generated.h"
+            "c:\\unreal\\rpgproject\\rpgproject\\intermediate\\build\\win64\\unrealeditor\\inc\\rpgproject\\uht\\sevaroganiminstance.generated.h",
+            "c:\\unreal\\rpgproject\\rpgproject\\source\\rpgproject\\effect\\defaulteffect.h",
+            "c:\\unreal\\rpgproject\\rpgproject\\intermediate\\build\\win64\\unrealeditor\\inc\\rpgproject\\uht\\defaulteffect.generated.h",
+            "c:\\unreal\\rpgproject\\rpgproject\\source\\rpgproject\\ai\\aisevarogcharacter.h",
+            "c:\\unreal\\rpgproject\\rpgproject\\source\\rpgproject\\ai\\aicharacter.h",
+            "c:\\unreal\\rpgproject\\rpgproject\\source\\rpgproject\\ai\\aipawn.h",
+            "c:\\unreal\\rpgproject\\rpgproject\\intermediate\\build\\win64\\unrealeditor\\inc\\rpgproject\\uht\\aipawn.generated.h",
+            "c:\\unreal\\rpgproject\\rpgproject\\intermediate\\build\\win64\\unrealeditor\\inc\\rpgproject\\uht\\aicharacter.generated.h",
+            "c:\\unreal\\rpgproject\\rpgproject\\intermediate\\build\\win64\\unrealeditor\\inc\\rpgproject\\uht\\aisevarogcharacter.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

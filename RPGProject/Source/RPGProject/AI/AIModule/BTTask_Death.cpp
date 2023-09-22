@@ -2,7 +2,7 @@
 
 
 #include "BTTask_Death.h"
-#include "../DefaultAIController.h"
+#include "AIController.h"
 #include "../AIPawn.h"
 #include "../DefaultAIAnimInstance.h"
 #include "../AIState.h"

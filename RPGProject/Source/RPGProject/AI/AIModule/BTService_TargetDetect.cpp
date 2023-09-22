@@ -2,7 +2,7 @@
 
 
 #include "BTService_TargetDetect.h"
-#include "../DefaultAIController.h"
+#include "AIController.h"
 #include "../AIPawn.h"
 #include "../AICharacter.h"
 #include "../AIState.h"

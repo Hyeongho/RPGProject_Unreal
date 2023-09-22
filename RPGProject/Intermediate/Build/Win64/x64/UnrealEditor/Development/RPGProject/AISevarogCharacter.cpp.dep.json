@@ -798,7 +798,11 @@
             "c:\\program files\\epic games\\ue_5.2\\engine\\source\\runtime\\engine\\public\\visuallogger\\visualloggerdebugsnapshotinterface.h",
             "c:\\program files\\epic games\\ue_5.2\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\visualloggerdebugsnapshotinterface.generated.h",
             "c:\\program files\\epic games\\ue_5.2\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\aimodule\\uht\\aicontroller.generated.h",
-            "c:\\unreal\\rpgproject\\rpgproject\\intermediate\\build\\win64\\unrealeditor\\inc\\rpgproject\\uht\\sevarogaicontroller.generated.h"
+            "c:\\unreal\\rpgproject\\rpgproject\\intermediate\\build\\win64\\unrealeditor\\inc\\rpgproject\\uht\\sevarogaicontroller.generated.h",
+            "c:\\unreal\\rpgproject\\rpgproject\\source\\rpgproject\\ai\\sevaroganiminstance.h",
+            "c:\\unreal\\rpgproject\\rpgproject\\source\\rpgproject\\ai\\defaultaianiminstance.h",
+            "c:\\unreal\\rpgproject\\rpgproject\\intermediate\\build\\win64\\unrealeditor\\inc\\rpgproject\\uht\\defaultaianiminstance.generated.h",
+            "c:\\unreal\\rpgproject\\rpgproject\\intermediate\\build\\win64\\unrealeditor\\inc\\rpgproject\\uht\\sevaroganiminstance.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

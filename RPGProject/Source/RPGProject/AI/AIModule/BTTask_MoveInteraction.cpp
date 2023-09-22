@@ -2,6 +2,7 @@
 
 
 #include "BTTask_MoveInteraction.h"
+#include "AIController.h"
 #include "../AIPawn.h"
 #include "../DefaultAIAnimInstance.h"
 #include "../AIState.h"

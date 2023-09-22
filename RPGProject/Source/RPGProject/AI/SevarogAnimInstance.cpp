@@ -2,9 +2,12 @@
 
 
 #include "SevarogAnimInstance.h"
+#include "../Effect/DefaultEffect.h"
+#include "AISevarogCharacter.h"
 
 USevarogAnimInstance::USevarogAnimInstance()
 {
+	
 }
 
 void USevarogAnimInstance::Attack()
@@ -45,10 +48,41 @@ void USevarogAnimInstance::NativeUninitializeAnimation()
 void USevarogAnimInstance::NativeBeginPlay()
 {
 	Super::NativeBeginPlay();
+	
+	PlayStart();
+}
+
+void USevarogAnimInstance::PlayStart()
+{
+	m_AnimType = EAIAnimType::Start;
+
+	if (m_AnimType != EAIAnimType::Start || Montage_IsPlaying(m_StartMontage))
+	{
+		LOG(TEXT("Attack false"));
+
+		return;
+	}
+
+	LOG(TEXT("Attack"));
+
+	Montage_SetPosition(m_StartMontage, 0.f);
+
+	Montage_Play(m_StartMontage);
 }
 
 void USevarogAnimInstance::AnimNotify_PlayParticleEffect()
 {
 	FActorSpawnParameters ActorParam;
 	ActorParam.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
+
+	AAISevarogCharacter* AI = Cast<AAISevarogCharacter>(TryGetPawnOwner());
+
+	ADefaultEffect* Effect = GetWorld()->SpawnActor<ADefaultEffect>(AI->GetActorLocation(), FRotator::ZeroRotator, ActorParam);
+
+	Effect->SetParticleAsset(TEXT("/Script/Engine.ParticleSystem'/Game/ParagonSevarog/FX/Particles/P_Sevarog_LevelStart.P_Sevarog_LevelStart'"));
+}
+
+void USevarogAnimInstance::AnimNotify_StartEnd()
+{
+	m_AnimType = EAIAnimType::Idle;
 }

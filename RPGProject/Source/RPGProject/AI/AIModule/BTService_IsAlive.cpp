@@ -2,7 +2,7 @@
 
 
 #include "BTService_IsAlive.h"
-#include "../DefaultAIController.h"
+#include "AIController.h"
 #include "../AIPawn.h"
 #include "../AIState.h"
 #include "../AICharacter.h"

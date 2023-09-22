@@ -24,7 +24,7 @@ AAIMinionPawn::AAIMinionPawn()
 
 	// 애니메이션 블루프린트를 지정한다.
 
-	static ConstructorHelpers::FClassFinder<UAnimInstance>	AnimAsset(TEXT("/Script/Engine.AnimBlueprint'/Game/AI/AB_AIMinionLane.AB_AIMinionLane_C'"));
+	static ConstructorHelpers::FClassFinder<UAnimInstance> AnimAsset(TEXT("/Script/Engine.AnimBlueprint'/Game/AI/AB_AIMinionLane.AB_AIMinionLane_C'"));
 
 	if (AnimAsset.Succeeded())
 	{
