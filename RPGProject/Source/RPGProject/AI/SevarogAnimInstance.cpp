@@ -4,6 +4,8 @@
 #include "SevarogAnimInstance.h"
 #include "../Effect/DefaultEffect.h"
 #include "AISevarogCharacter.h"
+#include "AIPawn.h"
+#include "AICharacter.h"
 
 USevarogAnimInstance::USevarogAnimInstance()
 {
@@ -85,4 +87,23 @@ void USevarogAnimInstance::AnimNotify_PlayParticleEffect()
 void USevarogAnimInstance::AnimNotify_StartEnd()
 {
 	m_AnimType = EAIAnimType::Idle;
+}
+
+void USevarogAnimInstance::AnimNotify_Death()
+{
+	if (AAIPawn* AIPawn = Cast<AAIPawn>(TryGetPawnOwner()))
+	{
+		if (IsValid(AIPawn))
+		{
+			AIPawn->Death();
+		}
+	}
+
+	else if (AAICharacter* AICharacter = Cast<AAICharacter>(TryGetPawnOwner()))
+	{
+		if (IsValid(AICharacter))
+		{
+			AICharacter->Death();
+		}
+	}
 }

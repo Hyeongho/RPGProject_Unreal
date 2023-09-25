@@ -23,6 +23,15 @@ EBTNodeResult::Type UBTTask_MoveInteraction::ExecuteTask(UBehaviorTreeComponent&
 
 	AAIController* Controller = OwnerComp.GetAIOwner();
 
+	int32 HP = Controller->GetBlackboardComponent()->GetValueAsInt(TEXT("HP"));
+
+	if (HP <= 0)
+	{
+		Controller->StopMovement();
+
+		return EBTNodeResult::Failed;
+	}
+
 	if (AAIPawn* AIPawn = Cast<AAIPawn>(Controller->GetPawn()))
 	{
 		if (!IsValid(AIPawn))
@@ -96,6 +105,17 @@ void UBTTask_MoveInteraction::TickTask(UBehaviorTreeComponent& OwnerComp, uint8*
 	Super::TickTask(OwnerComp, NodeMemory, DeltaSeconds);
 
 	AAIController* Controller = OwnerComp.GetAIOwner();
+
+	int32 HP = Controller->GetBlackboardComponent()->GetValueAsInt(TEXT("HP"));
+
+	if (HP <= 0)
+	{
+		FinishLatentTask(OwnerComp, EBTNodeResult::Failed);
+
+		Controller->StopMovement();
+
+		return;
+	}
 
 	if (AAIPawn* AIPawn = Cast<AAIPawn>(Controller->GetPawn()))
 	{

@@ -16,6 +16,13 @@ void EmptyLinkFunctionForGeneratedCodeSevarogAnimInstance() {}
 	RPGPROJECT_API UClass* Z_Construct_UClass_USevarogAnimInstance_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_RPGProject();
 // End Cross Module References
+	DEFINE_FUNCTION(USevarogAnimInstance::execAnimNotify_Death)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->AnimNotify_Death();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(USevarogAnimInstance::execAnimNotify_StartEnd)
 	{
 		P_FINISH;
@@ -34,10 +41,33 @@ void EmptyLinkFunctionForGeneratedCodeSevarogAnimInstance() {}
 	{
 		UClass* Class = USevarogAnimInstance::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "AnimNotify_Death", &USevarogAnimInstance::execAnimNotify_Death },
 			{ "AnimNotify_PlayParticleEffect", &USevarogAnimInstance::execAnimNotify_PlayParticleEffect },
 			{ "AnimNotify_StartEnd", &USevarogAnimInstance::execAnimNotify_StartEnd },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_USevarogAnimInstance_AnimNotify_Death_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_USevarogAnimInstance_AnimNotify_Death_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "AI/SevarogAnimInstance.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_USevarogAnimInstance_AnimNotify_Death_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USevarogAnimInstance, nullptr, "AnimNotify_Death", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_USevarogAnimInstance_AnimNotify_Death_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_USevarogAnimInstance_AnimNotify_Death_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_USevarogAnimInstance_AnimNotify_Death()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_USevarogAnimInstance_AnimNotify_Death_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_USevarogAnimInstance_AnimNotify_PlayParticleEffect_Statics
 	{
@@ -108,6 +138,7 @@ void EmptyLinkFunctionForGeneratedCodeSevarogAnimInstance() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_RPGProject,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_USevarogAnimInstance_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_USevarogAnimInstance_AnimNotify_Death, "AnimNotify_Death" }, // 381965367
 		{ &Z_Construct_UFunction_USevarogAnimInstance_AnimNotify_PlayParticleEffect, "AnimNotify_PlayParticleEffect" }, // 2135962906
 		{ &Z_Construct_UFunction_USevarogAnimInstance_AnimNotify_StartEnd, "AnimNotify_StartEnd" }, // 731328198
 	};
@@ -167,9 +198,9 @@ void EmptyLinkFunctionForGeneratedCodeSevarogAnimInstance() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_RPGProject_RPGProject_Source_RPGProject_AI_SevarogAnimInstance_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_USevarogAnimInstance, USevarogAnimInstance::StaticClass, TEXT("USevarogAnimInstance"), &Z_Registration_Info_UClass_USevarogAnimInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USevarogAnimInstance), 2393948822U) },
+		{ Z_Construct_UClass_USevarogAnimInstance, USevarogAnimInstance::StaticClass, TEXT("USevarogAnimInstance"), &Z_Registration_Info_UClass_USevarogAnimInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USevarogAnimInstance), 3758760691U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_RPGProject_RPGProject_Source_RPGProject_AI_SevarogAnimInstance_h_1483680366(TEXT("/Script/RPGProject"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_RPGProject_RPGProject_Source_RPGProject_AI_SevarogAnimInstance_h_3017222650(TEXT("/Script/RPGProject"),
 		Z_CompiledInDeferFile_FID_Unreal_RPGProject_RPGProject_Source_RPGProject_AI_SevarogAnimInstance_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_RPGProject_RPGProject_Source_RPGProject_AI_SevarogAnimInstance_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

@@ -17,12 +17,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define FID_Unreal_RPGProject_RPGProject_Source_RPGProject_AI_SevarogAnimInstance_h_14_SPARSE_DATA
 #define FID_Unreal_RPGProject_RPGProject_Source_RPGProject_AI_SevarogAnimInstance_h_14_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execAnimNotify_Death); \
 	DECLARE_FUNCTION(execAnimNotify_StartEnd); \
 	DECLARE_FUNCTION(execAnimNotify_PlayParticleEffect);
 
 
 #define FID_Unreal_RPGProject_RPGProject_Source_RPGProject_AI_SevarogAnimInstance_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execAnimNotify_Death); \
 	DECLARE_FUNCTION(execAnimNotify_StartEnd); \
 	DECLARE_FUNCTION(execAnimNotify_PlayParticleEffect);
 

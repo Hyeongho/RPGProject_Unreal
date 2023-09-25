@@ -54,4 +54,11 @@ void AAISevarogCharacter::Tick(float DeltaTime)
 void AAISevarogCharacter::Death()
 {
 	Super::Death();
+
+	GetMesh()->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
+
+	GetMesh()->SetCollisionProfileName(TEXT("Ragdoll"));
+
+	GetMesh()->SetSimulatePhysics(true);
+	GetMesh()->SetEnableGravity(true);
 }

@@ -283,10 +283,7 @@ C:\Unreal\RPGProject\RPGProject\Source\RPGProject\AI\AIModule\BTService_IsAlive.
 /external:I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\shared"
 /external:I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\um"
 /external:I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\winrt"
-/FI"C:\Unreal\RPGProject\RPGProject\Intermediate\Build\Win64\x64\RPGProjectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/FI"C:\Unreal\RPGProject\RPGProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGProject\Definitions.RPGProject.h"
-/Yu"C:\Unreal\RPGProject\RPGProject\Intermediate\Build\Win64\x64\RPGProjectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"C:\Unreal\RPGProject\RPGProject\Intermediate\Build\Win64\x64\RPGProjectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+/FI"C:\Unreal\RPGProject\RPGProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGProject\Definitions.h"
 /Fo"C:\Unreal\RPGProject\RPGProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGProject\BTService_IsAlive.cpp.obj"
 /sourceDependencies C:\Unreal\RPGProject\RPGProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGProject\BTService_IsAlive.cpp.dep.json
 /Zc:inline

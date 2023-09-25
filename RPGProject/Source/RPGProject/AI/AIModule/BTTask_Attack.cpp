@@ -124,6 +124,19 @@ void UBTTask_Attack::TickTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemo
 
 		if (AIPawn->GetAttackEnd())
 		{
+			int32 HP = Controller->GetBlackboardComponent()->GetValueAsInt(TEXT("HP"));
+
+			if (HP <= 0)
+			{
+				FinishLatentTask(OwnerComp, EBTNodeResult::Failed);
+
+				Controller->StopMovement();
+
+				AIPawn->GetAIAnimInstance()->ChangeAnim(EAIAnimType::Idle);
+
+				return;
+			}
+
 			FVector	AILoc = AIPawn->GetActorLocation();
 			FVector	TargetLoc = Target->GetActorLocation();
 
@@ -196,6 +209,19 @@ void UBTTask_Attack::TickTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemo
 
 		if (AICharacter->GetAttackEnd())
 		{
+			int32 HP = Controller->GetBlackboardComponent()->GetValueAsInt(TEXT("HP"));
+
+			if (HP <= 0)
+			{
+				FinishLatentTask(OwnerComp, EBTNodeResult::Failed);
+
+				Controller->StopMovement();
+
+				AICharacter->GetAIAnimInstance()->ChangeAnim(EAIAnimType::Idle);
+
+				return;
+			}
+
 			FVector	AILoc = AICharacter->GetActorLocation();
 			FVector	TargetLoc = Target->GetActorLocation();
 

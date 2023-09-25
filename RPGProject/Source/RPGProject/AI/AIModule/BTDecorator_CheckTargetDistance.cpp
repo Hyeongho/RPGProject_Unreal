@@ -20,6 +20,8 @@ bool UBTDecorator_CheckTargetDistance::CalculateRawConditionValue(UBehaviorTreeC
 
 	AAIController* Controller = OwnerComp.GetAIOwner();
 
+
+
 	if (AAIPawn* AIPawn = Cast<AAIPawn>(Controller->GetPawn()))
 	{
 		// AIPawn이 아닐 경우 정지.

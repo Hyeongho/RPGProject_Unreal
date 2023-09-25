@@ -46,4 +46,7 @@ public:
 
 	UFUNCTION()
 	void AnimNotify_StartEnd();
+
+	UFUNCTION()
+	void AnimNotify_Death();
 };

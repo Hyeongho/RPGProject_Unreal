@@ -120,6 +120,7 @@ float AAICharacter::TakeDamage(float DamageAmount, FDamageEvent const& DamageEve
 
 void AAICharacter::Death()
 {
+	GetMovementComponent()->Velocity = FVector(0.0, 0.0, 0.0);
 }
 
 void AAICharacter::SetCollisionProfile(const FName& Name)
