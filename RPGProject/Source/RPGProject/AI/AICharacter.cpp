@@ -86,6 +86,15 @@ void AAICharacter::OnConstruction(const FTransform& Transform)
 
 		/*m_Movement->MaxSpeed = Data->MoveSpeed;*/
 	}
+
+	int32 ElementCount = GetMesh()->GetNumMaterials();
+
+	for (int32 i = 0; i < ElementCount; i++)
+	{
+		UMaterialInstanceDynamic* Mtrl = GetMesh()->CreateDynamicMaterialInstance(i);
+
+		m_MaterialArray.Add(Mtrl);
+	}
 }
 
 // Called every frame

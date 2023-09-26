@@ -97,9 +97,9 @@ void EmptyLinkFunctionForGeneratedCodeAIMinionCharacter() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_RPGProject_RPGProject_Source_RPGProject_AI_AIMinionCharacter_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AAIMinionCharacter, AAIMinionCharacter::StaticClass, TEXT("AAIMinionCharacter"), &Z_Registration_Info_UClass_AAIMinionCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AAIMinionCharacter), 3171574901U) },
+		{ Z_Construct_UClass_AAIMinionCharacter, AAIMinionCharacter::StaticClass, TEXT("AAIMinionCharacter"), &Z_Registration_Info_UClass_AAIMinionCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AAIMinionCharacter), 283742513U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_RPGProject_RPGProject_Source_RPGProject_AI_AIMinionCharacter_h_542000209(TEXT("/Script/RPGProject"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_RPGProject_RPGProject_Source_RPGProject_AI_AIMinionCharacter_h_1057197876(TEXT("/Script/RPGProject"),
 		Z_CompiledInDeferFile_FID_Unreal_RPGProject_RPGProject_Source_RPGProject_AI_AIMinionCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_RPGProject_RPGProject_Source_RPGProject_AI_AIMinionCharacter_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

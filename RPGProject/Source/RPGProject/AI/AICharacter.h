@@ -43,6 +43,14 @@ protected:
 
 	bool m_AttackEnd;
 
+	TArray<TObjectPtr<UMaterialInstanceDynamic>> m_MaterialArray;
+
+	UPROPERTY(Category = Component, EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
+	float m_DissolveTime;
+
+	float m_DissolveCurrentTime;
+	bool m_DissolveEnable;
+
 public:
 	void SetAttackEnd(bool AttackEnd)
 	{

@@ -2,19 +2,18 @@
   Running UnrealBuildTool: dotnet "..\..\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" RPGProjectEditor Win64 Development -Project="C:\Unreal\RPGProject\RPGProject\RPGProject.uproject" -WaitMutex -FromMsBuild
   Log file: C:\Users\user\AppData\Local\UnrealBuildTool\Log.txt
   Using 'git status' to determine working set for adaptive non-unity build (C:\Unreal\RPGProject).
-  Invalidating makefile for RPGProjectEditor (SevarogAnimInstance.cpp.obj.response modified)
   Building RPGProjectEditor...
   Using Visual Studio 2022 14.34.31946 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933) and Windows 10.0.22621.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  [Adaptive Build] Excluded from RPGProject unity file: GameInfo.cpp, RPGProjectGameModeBase.cpp, StartGameMode.cpp, AICharacter.cpp, AISevarogCharacter.cpp, SevarogAnimInstance.cpp, BTDecorator_CheckTargetDistance.cpp, BTTask_Attack.cpp, BTTask_MoveInteraction.cpp, StartWidget.cpp, RPGProject.init.gen.cpp, SevarogAnimInstance.gen.cpp, StartGameMode.gen.cpp, StartWidget.gen.cpp
+  [Adaptive Build] Excluded from RPGProject unity file: AICharacter.cpp, AISevarogCharacter.cpp, AICharacter.gen.cpp, AIMinionCharacter.gen.cpp, AISevarogCharacter.gen.cpp, RPGProject.init.gen.cpp
   Determining max actions to execute in parallel (10 physical cores, 16 logical cores)
     Executing up to 10 processes, one per physical core
-    Requested 1.5 GB free memory per action, 8.56 GB available: limiting max parallel actions to 5
-  Building 4 actions with 4 processes...
-  [1/4] Compile [x64] SevarogAnimInstance.cpp
-  [2/4] Link [x64] UnrealEditor-RPGProject-0023.lib
-     C:\Unreal\RPGProject\RPGProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGProject\UnrealEditor-RPGProject-0023.lib 라이브러리 및 C:\Unreal\RPGProject\RPGProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGProject\UnrealEditor-RPGProject-0023.exp 개체를 생성하고 있습니다.
-  [3/4] Link [x64] UnrealEditor-RPGProject-0023.dll
-     C:\Unreal\RPGProject\RPGProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGProject\UnrealEditor-RPGProject-0023.suppressed.lib 라이브러리 및 C:\Unreal\RPGProject\RPGProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGProject\UnrealEditor-RPGProject-0023.suppressed.exp 개체를 생성하고 있습니다.
-  [4/4] WriteMetadata RPGProjectEditor.target
-  Total time in Parallel executor: 15.22 seconds
-  Total execution time: 17.37 seconds
+  Building 5 actions with 5 processes...
+  [1/5] Compile [x64] AISevarogCharacter.cpp
+  [2/5] Compile [x64] AICharacter.cpp
+  [3/5] Link [x64] UnrealEditor-RPGProject-0020.lib
+     C:\Unreal\RPGProject\RPGProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGProject\UnrealEditor-RPGProject-0020.lib 라이브러리 및 C:\Unreal\RPGProject\RPGProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGProject\UnrealEditor-RPGProject-0020.exp 개체를 생성하고 있습니다.
+  [4/5] Link [x64] UnrealEditor-RPGProject-0020.dll
+     C:\Unreal\RPGProject\RPGProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGProject\UnrealEditor-RPGProject-0020.suppressed.lib 라이브러리 및 C:\Unreal\RPGProject\RPGProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGProject\UnrealEditor-RPGProject-0020.suppressed.exp 개체를 생성하고 있습니다.
+  [5/5] WriteMetadata RPGProjectEditor.target
+  Total time in Parallel executor: 7.53 seconds
+  Total execution time: 8.34 seconds

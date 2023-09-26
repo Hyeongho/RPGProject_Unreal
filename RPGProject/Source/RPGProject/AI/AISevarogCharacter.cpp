@@ -32,6 +32,10 @@ AAISevarogCharacter::AAISevarogCharacter()
 	AIControllerClass = nullptr;
 
 	AIControllerClass = ASevarogAIController::StaticClass();
+
+	m_DissolveCurrentTime = 0.f;
+	m_DissolveTime = 3.f;
+	m_DissolveEnable = false;
 }
 
 void AAISevarogCharacter::BeginPlay()
@@ -49,16 +53,35 @@ void AAISevarogCharacter::EndPlay(const EEndPlayReason::Type EndPlayReason)
 void AAISevarogCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
+	if (m_DissolveEnable)
+	{
+		m_DissolveCurrentTime += DeltaTime;
+
+		if (m_DissolveCurrentTime >= m_DissolveTime)
+		{
+			Destroy();
+		}
+
+		float Ratio = m_DissolveCurrentTime / m_DissolveTime;
+		Ratio = 1.f - Ratio;
+		Ratio = Ratio * 2.f - 1.f;
+
+		for (auto& Mtrl : m_MaterialArray)
+		{
+			Mtrl->SetScalarParameterValue(TEXT("Dissolve"), Ratio);
+		}
+	}
 }
 
 void AAISevarogCharacter::Death()
 {
 	Super::Death();
 
-	GetMesh()->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
+	for (auto& Mtrl : m_MaterialArray)
+	{
+		Mtrl->SetScalarParameterValue(TEXT("DissolveEnable"), 1.f);
+	}
 
-	GetMesh()->SetCollisionProfileName(TEXT("Ragdoll"));
-
-	GetMesh()->SetSimulatePhysics(true);
-	GetMesh()->SetEnableGravity(true);
+	m_DissolveEnable = true;
 }
