@@ -32,7 +32,6 @@
 #include "C:/Unreal/RPGProject/RPGProject/Intermediate/Build/Win64/UnrealEditor/Inc/RPGProject/UHT/Trigger.gen.cpp"
 #include "C:/Unreal/RPGProject/RPGProject/Intermediate/Build/Win64/UnrealEditor/Inc/RPGProject/UHT/YinAnimInstance.gen.cpp"
 #include "C:/Unreal/RPGProject/RPGProject/Intermediate/Build/Win64/UnrealEditor/Inc/RPGProject/UHT/YinCharacter.gen.cpp"
-#include "C:/Unreal/RPGProject/RPGProject/Source/RPGProject/AI/AIMinionCharacter.cpp"
 #include "C:/Unreal/RPGProject/RPGProject/Source/RPGProject/AI/AIMinionPawn.cpp"
 #include "C:/Unreal/RPGProject/RPGProject/Source/RPGProject/AI/AIModule/BTDecorator_CheckTargetDistance.cpp"
 #include "C:/Unreal/RPGProject/RPGProject/Source/RPGProject/AI/AIModule/BTDecorator_IsDeath.cpp"

@@ -57,7 +57,9 @@ void AAIMinionCharacter::Death()
 {
 	Super::Death();
 
-	//m_Anim->ResetDynamics();
+	LOG(TEXT("Death"));
+
+	m_State = EAICharacterState::Death;
 
 	GetMesh()->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
 

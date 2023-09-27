@@ -7,6 +7,13 @@
 #include "GameFramework/Character.h"
 #include "AICharacter.generated.h"
 
+UENUM(BlueprintType)
+enum class EAICharacterState : uint8
+{
+	Alive, 
+	Death
+};
+
 UCLASS()
 class RPGPROJECT_API AAICharacter : public ACharacter
 {
@@ -18,6 +25,9 @@ public:
 
 protected:
 	static TObjectPtr<UDataTable> m_AIDataTable;
+
+	UPROPERTY(Category = Data, VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	EAICharacterState m_State;
 
 public:
 	static void LoadAIData();
@@ -86,6 +96,16 @@ public:
 	}
 
 	void SetSpawnPoint(class AAISpawnPoint* SpawnPoint);
+
+	bool IsDeath()
+	{
+		if (m_State == EAICharacterState::Alive)
+		{
+			return false;
+		}
+
+		return true;
+	}	
 
 protected:
 	// Called when the game starts or when spawned

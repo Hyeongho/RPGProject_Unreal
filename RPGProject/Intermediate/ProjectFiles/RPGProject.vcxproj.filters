@@ -48,6 +48,12 @@
     <ClInclude Include="..\..\Source\RPGProject\GameInfo.h">
       <Filter>Source\RPGProject</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\RPGProject\Level1GameModeBase.cpp">
+      <Filter>Source\RPGProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RPGProject\Level1GameModeBase.h">
+      <Filter>Source\RPGProject</Filter>
+    </ClInclude>
     <None Include="..\..\Source\RPGProject\RPGProject.Build.cs">
       <Filter>Source\RPGProject</Filter>
     </None>
@@ -73,6 +79,12 @@
       <Filter>Source\RPGProject</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\RPGProject\SpawnPoint.h">
+      <Filter>Source\RPGProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\RPGProject\StartGameMode.cpp">
+      <Filter>Source\RPGProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RPGProject\StartGameMode.h">
       <Filter>Source\RPGProject</Filter>
     </ClInclude>
     <Filter Include="Source\RPGProject\AI">
@@ -282,21 +294,17 @@
     <Filter Include="Source\RPGProject\UI">
       <UniqueIdentifier>{A3FD2ACD-2DCD-3157-BE35-732115263AB6}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\RPGProject\UI\Level1Widget.cpp">
+      <Filter>Source\RPGProject\UI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RPGProject\UI\Level1Widget.h">
+      <Filter>Source\RPGProject\UI</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\RPGProject\UI\StartWidget.cpp">
       <Filter>Source\RPGProject\UI</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\RPGProject\UI\StartWidget.h">
       <Filter>Source\RPGProject\UI</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\Source\RPGProject\StartGameMode.cpp">
-      <Filter>Source\RPGProject</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\Source\RPGProject\StartGameMode.h">
-      <Filter>Source\RPGProject</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

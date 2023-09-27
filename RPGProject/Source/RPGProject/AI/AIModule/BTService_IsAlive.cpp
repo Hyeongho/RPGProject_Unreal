@@ -24,14 +24,14 @@ void UBTService_IsAlive::TickNode(UBehaviorTreeComponent& OwnerComp, uint8* Node
 	{
 		Controller->GetBlackboardComponent()->SetValueAsInt(TEXT("HP"), AIPawn->GetAIState()->GetHP());
 
-		LOG(TEXT("HP : %d"), AIPawn->GetAIState()->GetHP());
+		//LOG(TEXT("HP : %d"), AIPawn->GetAIState()->GetHP());
 	}
 
 	else if (AAICharacter* AICharacter = Cast<AAICharacter>(Controller->GetPawn()))
 	{
 		Controller->GetBlackboardComponent()->SetValueAsInt(TEXT("HP"), AICharacter->GetAIState()->GetHP());
 
-		LOG(TEXT("HP : %d"), AICharacter->GetAIState()->GetHP());
+		//(TEXT("HP : %d"), AICharacter->GetAIState()->GetHP());
 	}
 
 	else
