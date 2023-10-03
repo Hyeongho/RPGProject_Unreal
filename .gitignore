@@ -137,8 +137,8 @@ Plugins/**/Intermediate/*
 *.VC.opendb
 
 # Precompiled Assets
-SourceArt/**/*.png
-SourceArt/**/*.tga
+RPGProject/SourceArt/**/*.png
+RPGProject/SourceArt/**/*.tga
 
 # Binary Files
 RPGProject/Binaries/*
