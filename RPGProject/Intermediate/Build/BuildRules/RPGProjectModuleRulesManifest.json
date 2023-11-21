@@ -1,8 +1,0 @@
-{
-	"SourceFiles": [
-		"C:\\Unreal\\RPGProject\\RPGProject\\Source\\RPGProject\\RPGProject.Build.cs",
-		"C:\\Unreal\\RPGProject\\RPGProject\\Source\\RPGProject.Target.cs",
-		"C:\\Unreal\\RPGProject\\RPGProject\\Source\\RPGProjectEditor.Target.cs"
-	],
-	"EngineVersion": "5.2.1"
-}
